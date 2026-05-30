@@ -1,5 +1,5 @@
 /**
- * Middleware Next.js — Edge Runtime
+ * Proxy Next.js 16 — Edge Runtime (anciennement middleware.ts)
  *
  * Responsabilités :
  *  1. Protection des routes /api/admin/* (vérification cookie JWT)
@@ -131,7 +131,7 @@ function shortId(): string {
 
 // ===== MIDDLEWARE =====
 
-export async function middleware(req: NextRequest) {
+export async function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
   const ip = getIP(req);
 
