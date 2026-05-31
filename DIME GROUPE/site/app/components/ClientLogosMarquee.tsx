@@ -59,12 +59,7 @@ export default function ClientLogosMarquee({ logos, globalHeight = 36 }: Props) 
   const items = logos.length < 5 ? [...logos, ...logos, ...logos] : [...logos, ...logos];
 
   return (
-    <div className="mt-10">
-      {/* Titre section */}
-      <p className="text-center text-xs font-medium uppercase tracking-widest text-[color-mix(in_oklch,var(--foreground)_40%,transparent)] mb-6">
-        Ils nous font confiance
-      </p>
-
+    <div className="mt-4">
       {/* Conteneur masqué avec fade sur les bords */}
       <div
         className="relative overflow-hidden"
